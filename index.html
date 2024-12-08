@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="description" content="description"/>
+		<meta name="keywords" content="keywords"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<link rel="shortcut icon" href="img/favicon.ico"/>
+		<link rel="stylesheet" href="css/styles.min.css"/>
+		<link rel="stylesheet" href="index.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+		<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+		<script>
+			tailwind.config = {
+			  theme: {
+				extend: {
+				  colors: {
+					clifford: '#da373d',
+				  }
+				}
+			  }
+			}
+		  </script>
+		<title>Home - Katha Kalam</title>
+		<!-- styles-->
+		<!-- web-font loader-->
+		<script>
+			WebFontConfig = {
+
+				google: {
+
+					families: ['Quicksand:300,400,500,700', 'Permanent+Marker:400'],
+
+				}
+
+			}
+
+			function font() {
+
+				var wf = document.createElement('script')
+
+				wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js'
+				wf.type = 'text/javascript'
+				wf.async = 'true'
+
+				var s = document.getElementsByTagName('script')[0]
+
+				s.parentNode.insertBefore(wf, s)
+
+			}
+
+			font()
+		</script>
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<!-- aside dropdown start-->
+			<div class="aside-dropdown">
+				<div class="aside-dropdown__inner">
+					<span class="aside-dropdown__close">
+					<svg class="icon">
+						<use xlink:href="#close"></use>
+					</svg>
+				</span>
+				<div class="aside-dropdown__item d-lg-none d-block">
+					<ul class="aside-menu">
+						<li class="aside-menu__item aside-menu__item--active"><a class="aside-menu__link" href="/#"><span>Home</span></a>
+						</li>
+						<li class="aside-menu__item"><a class="aside-menu__link" href="about.html"><span>About</span></a>
+							<!-- sub menu start-->
+							
+							<!-- sub menu end-->
+							<li class="aside-menu__item "><a class="aside-menu__link" href="gallery.html"><span>Gallery</span></a>
+						</li>
+
+						<li class="aside-menu__item"><a class="aside-menu__link" href="contacts.html"><span>Contacts</span></a></li>
+					
+					</ul>
+				</div>
+				<div class="aside-dropdown__item">
+				
+					<div class="aside-inner"><span class="aside-inner__title">Email</span><a class="aside-inner__link" href="mailto:support@helpo.org">support@helpo.org</a></div>
+					<div class="aside-inner"><span class="aside-inner__title">Phone numbers</span><a class="aside-inner__link" href="tel:+180012345678">+ 1800 - 123 456 78</a><a class="aside-inner__link" href="tel:+18009756511">+ 1800 - 975 65 11</a></div>
+					<ul class="aside-socials">
+						<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i class=" fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+						<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="aside-dropdown__item">
+					<a class="button button--squared" href="#"><span>Donate</span></a>
+				</div>
+				</div>
+			</div>
+			<!-- aside dropdown end-->
+			<!-- header start-->
+			<header class="header header--front_2">
+				<div class="container-fluid">
+					<div class="row no-gutters justify-content-between">
+						<div class="col-auto d-flex align-items-center md:ml-10 md:py-0 py-3">
+							<!-- <div class="dropdown-trigger d-none d-sm-block">
+								<div class="dropdown-trigger__item"></div>
+							</div> -->
+							<div class="header-logo"><a class="header-logo__link" href="index.html">
+							
+								<img class="header-logo__img" src="img/logo/logo.png" alt="logo"/>
+							
+							</a></div>
+						</div>
+						<div class="col-auto">
+							<!-- main menu start-->
+							<nav>
+								<ul class="main-menu">
+									<li class="main-menu__item main-menu__item--active"><a href="/#" class="main-menu__link" ><span>Home</span></a>
+									
+									</li>
+									<li class="main-menu__item"><a href="about.html" class="main-menu__link"><span>About</span></a> </li>
+
+									<li class="main-menu__item"><a href="gallery.html" class="main-menu__link"><span>Gallery</span></a> </li>				
+									
+									<li class="main-menu__item"><a class="main-menu__link" href="contacts.html"><span>Contacts</span></a></li>
+									
+								</ul>
+							</nav>
+							<!-- main menu end-->
+						</div>
+						<div class="col-auto d-flex align-items-center">
+							<!-- lang select start-->
+							
+							<!-- lang select end-->
+							<li class="button button--squared dropdown main-menu__item--has-child">
+
+								<a class="main-menu__link "  href="javascript:void(0);"><span>Donate</span>
+								</a>
+									<ul class="main-menu__sub-list !w-80 !text-left ml-10 mt-1">
+										<li><a href="index.html"><span>Support Us with Milaap</span></a></li>
+										<li><a href="donate.html"> <span>Donate Directly</span></a></li>
+									</ul>
+									
+								
+							</li>
+							<div class="dropdown-trigger d-block d-sm-none">
+								<div class="dropdown-trigger__item"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- header end-->
+			<main class="main">
+				<!-- promo start-->
+				<section class="promo promo--front_2">
+					<div class="promo-slider">
+						<div class="promo-slider__item promo-slider__item--style-2 bg-black/40">
+							<picture>
+								<source srcset="img/promo_2.jpg" media="(min-width: 835px)"/>
+								<source srcset="img/834promo_2.jpg" media="(min-width: 376px)"/><img class="img--bg" src="img/375promo_2.jpg" alt="img"/>
+							</picture>
+							<div class="container">
+								<div class="row">
+									<div class="col-xl-7">
+										<div class="align-container">
+											<div class="align-container__item">
+												<div class="promo-slider__wrapper-1">
+													<h2 class="text-white text-8xl">Katha Kalam</h2>
+												</div>
+												<div class="promo-slider__wrapper-1">
+													<h3 class="text-white text-5xl leading-relaxed">A Non-Profit Venture</h3>
+												</div>
+												<div class="promo-slider__wrapper-2">
+													<p class="promo-slider__subtitle">
+														Alone we can do so little, but together, we can do so much.
+													</p>
+												</div>
+												<div class="promo-slider__wrapper-3"><a class="button promo-slider__button button--primary" href="#">About us</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="promo-slider__item promo-slider__item--style-1 bg-black/40">
+							<picture>
+								<source srcset="img/promo_1.jpg" media="(min-width: 835px)"/>
+								<source srcset="img/834promo_1.jpg" media="(min-width: 376px)"/><img class="img--bg" src="img/375promo_1.jpg" alt="img"/>
+							</picture>
+							<div class="container">
+								<div class="row">
+									<div class="col-12">
+										<div class="align-container">
+											<div class="align-container__item">
+												<div class="promo-slider__wrapper-1">
+													<h2 class="text-white !text-6xl mt-5"><span>Empowering communities through</span> </h2>
+													<h2 class="text-yellow-500 !text-8xl text-italic"><span></span> <span>education, art, and storytelling.</span></h2>
+												</div>
+												<div class="promo-slider__wrapper-2 mt-10">
+													<p class="promo-slider__subtitle">Together, we aim to inspire and uplift lives.</p>
+												</div>
+												<div class="promo-slider__wrapper-3"><a class="button promo-slider__button button--primary" href="#">Discover</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="promo-slider__item promo-slider__item--style-3 bg-black/40">
+							<picture>
+								<source srcset="img/promo_3.jpg" media="(min-width: 835px)"/>
+								<source srcset="img/834promo_3.jpg" media="(min-width: 376px)"/><img class="img--bg" src="img/375promo_3.jpg" alt="img"/>
+							</picture>
+							<div class="container">
+								<div class="row">
+									<div class="col-xl-8 offset-xl-2">
+										<div class="align-container">
+											<div class="align-container__item">
+												<div class="promo-slider__wrapper-1">
+													<h2 class="promo-slider__title"><span>Your support fuels </span><br/><span>our journey to create a lasting impact.</span></h2>
+												</div>
+												<div class="promo-slider__wrapper-2">
+													<p class="promo-slider__subtitle">
+														Let’s build a brighter tomorrow—together!
+													</p>
+												</div>
+												<div class="promo-slider__wrapper-3"><a class="button promo-slider__button button--primary" href="#">Discover</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><a class="anchor promo-pannel__anchor" href="#about"> <span>Scroll Down</span></a>
+					<!-- promo pannel start-->
+					<div class="promo-pannel">
+						<div class="promo-pannel__video"><img class="img--bg" src="img/video_block-2.jpg" alt="image"/><a class="video-trigger" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><span>Watch our video</span><i class="fa-solid fa-play" aria-hidden="true"></i></a></div>
+					</div>
+					<!-- promo pannel end-->
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<!-- slider nav start-->
+								<div class="slider__nav slider__nav--promo">
+									<div class="promo-slider__count"></div>
+									<div class="slider__arrows">
+										<div class="slider__prev"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+										</div>
+										<div class="slider__next"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<!-- slider nav end-->
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- promo end-->
+				<!-- section start-->
+				<section class="section about--front-2 background--brown" id="about">
+					<div class="container">
+						<div class="row">
+							<div class="col-xl-4">
+								<div class="heading heading--primary"><span class="heading__pre-title">About Us</span>
+									<h2 class="heading__title no-margin-bottom"><span>Help is Our</span> <span>Main Goal Ever</span></h2>
+								</div><a class="button button--primary d-none d-xl-inline-block" href="#">More about</a>
+							</div>
+							<div class="col-xl-8">
+								<p><strong>Making live beautiful, one step at a time"</strong></p>
+								<p>Katha Kalam, a Kolkata-based NGO, is dedicated to supporting children with autism and disabilities by creating a safe and inclusive environment. It provides vital resources such as education, therapy, and vocational training to help these children develop essential skills and lead meaningful lives. By collaborating with parents and caregivers, the organization ensures they receive the guidance needed to navigate the unique challenges of raising children with special needs.</p>
+								<p>The organization offers programs focused on skill development, including social, emotional, and communication therapy, as well as vocational training in fields like IT, healthcare, and hospitality. Through its efforts, Katha Kalam aims to break societal barriers and foster a more inclusive community where individuals with disabilities can realize their full potential.</p>
+								<div class="row margin-top offset-margin">
+									<div class="col-md-4 text-md-left text-center">
+										<div class="counter-item counter-item--style-3">
+											<div class="counter-item__top">
+												<h6 class="counter-item__title">People We Helped</h6>
+											</div>
+											<div class="counter-item__lower"><span class="js-counter">200</span><span>+</span></div>
+										</div>
+									</div>
+									<div class="col-md-4 text-md-left text-center">
+										<div class="counter-item counter-item--style-3">
+											<div class="counter-item__top">
+												<h6 class="counter-item__title">Donations Collected</h6>
+											</div>
+											<div class="counter-item__lower"><span class="js-counter">0.6</span><span>lakh</span></div>
+										</div>
+									</div>
+									<div class="col-md-4 text-md-left text-center">
+										<div class="counter-item counter-item--style-3">
+											<div class="counter-item__top">
+												<h6 class="counter-item__title">Events hosted</h6>
+											</div>
+											<div class="counter-item__lower"><span class="js-counter">18</span><span>+</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 text-center"><a class="button button--primary d-inline-block d-xl-none margin-top" href="about.html">More about</a></div>
+						</div>
+					</div>
+				</section>
+				<!-- section end-->
+				<!-- section start-->
+				<section class="section">
+					<div class="container">
+						<div class="row margin-bottom">
+							<div class="col-12">
+								<div class="heading heading--primary heading--center"><span class="heading__pre-title">What We do</span>
+									<h2 class="heading__title no-margin-bottom"><span>We do it</span> <span>for all people</span></h2>
+								</div>
+							</div>
+						</div>
+						<div class="row offset-margin">
+						
+							<div class="col-sm-6 col-lg-3">
+								<div class="icon-item text-left text-center text-sm-left">
+									<div class="icon-item__img"><img src="img/svg/icons_2/1.jpg" alt="icon"/></div>
+									<div class="icon-item__text">
+										<p>Special Care</p><span>Guardianship is practically important so that the child's needs and interests are secured, there are met with the comfort of parents whilst other caregivers fail to understand their value. </span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-3">
+								<div class="icon-item text-left text-center text-sm-left">
+									<div class="icon-item__img"><img src="img/svg/icons_2/2.png" alt="icon"/></div>
+									<div class="icon-item__text">
+										<p>Priority & Privilege</p><span>When it comes to education and means of teaching, please be assured that this is the right place for them, we understand the emotions behind your decision, but we are compelled to thank you for the trust you have placed among us.</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-3">
+								<div class="icon-item text-left text-center text-sm-left">
+									<div class="icon-item__img"><img src="img/svg/icons_2/3.jpg" alt="icon"/></div>
+									<div class="icon-item__text">
+										<p>Provisions & Rations</p><span>Food, Safety and Security are the top 3 uttermost concerns any parent has upright for their beloved, we aim to provide a secure and stable foundation for your beloved's well-being and to alleviate any concerns or uncertainties around their basic needs being met.</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-3">
+								<div class="icon-item text-left text-center text-sm-left">
+									<div class="icon-item__img"><img src="img/svg/icons_2/4.png" alt="icon"/></div>
+									<div class="icon-item__text">
+										<p>Hope & Healing</p><span>Compassion and understanding are the cornerstones of a brighter future for your loved ones. Together, we nurture, inspire, and empower every individual to thrive in their unique journey.</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- section end-->
+				<!-- section start-->
+				<section class="section action-section">
+					<div class="jarallax">
+						<picture>
+							<source srcset="img/counter.jpg" media="(min-width: 992px)"/><img class="jarallax-img" src="img/counter.jpg" alt="img"/>
+						</picture>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-12 text-center">
+								<h2 class="action-section__title">We are Awesome Volounteer Team</h2>
+								<p class="action-section__text">We are a passionate group of individuals dedicated to making a positive impact. Our mission is to support, uplift, and inspire through teamwork and compassion. Together, we create a meaningful difference in the lives of those who need it most.</p><a class="action-section__button button button--primary" href="#">Become a volounteer</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- section end-->
+				
+				<!-- causes end-->
+				<!-- section start-->
+				<section class="section">
+					<div class="row no-gutters">
+						<div class="col-lg-6 col-xl-8 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary projects-masonry__item--heading">
+							<div class="projects-masonry__img">
+								<div class="heading heading--primary"><span class="heading__pre-title">What we Did</span>
+									<h2 class="heading__title"><span>Katha Kalam</span> <span>Projects</span></h2>
+									<p>At Helpo Projects, we are proud of the impactful initiatives we've undertaken to bring about positive change in our communities. Our efforts span diverse areas, ensuring that every project leaves a meaningful legacy.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary">
+							<div class="projects-masonry__img"><img class="img--bg" src="img/projects_4.jpg" alt="img"/>
+								<div class="projects-masonry__inner"><span class="projects-masonry__badge" style="background: #2EC774;">Education</span>
+									<h3 class="projects-masonry__title"> <a href="cause-details.html">Help for Children</a></h3>
+									<p>Established learning programs for underprivileged children.
+										Organized skill development workshops for youth empowerment. </p>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary">
+							<div class="projects-masonry__img"><img class="img--bg" src="img/projects_5.jpg" alt="img"/>
+								<div class="projects-masonry__inner"><span class="projects-masonry__badge" style="background: #2EC774;">Community Care</span>
+									<h3 class="projects-masonry__title"> <a href="cause-details.html">
+										Food and essential
+									</a></h3>
+									<p>Provided food and essential supplies to families in need.
+										Arranged healthcare camps for underserved communities. </p>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary">
+							<div class="projects-masonry__img"><img class="img--bg" src="img/projects_3.jpg" alt="img"/>
+								<div class="projects-masonry__inner"><span class="projects-masonry__badge" style="background: #F8AC3A;">Environmental Action</span>
+									<h3 class="projects-masonry__title"> <a href="cause-details.html">Tree plantation</a></h3>
+									<p>Conducted tree plantation drives to combat deforestation.
+										Promoted sustainable living through awareness campaigns. </p>
+									
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary">
+							<div class="projects-masonry__img background--brown">
+								<div class="counter-item counter-item--style-3 no-margin-bottom">
+									<div class="counter-item__top">
+										<h6 class="counter-item__title">Closed Projects</h6>
+									</div>
+									<div class="counter-item__lower"><span class="js-counter">200</span><span>+</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- section end-->
+
+
+				<div class="container py-20">                      
+					<div class="row text-center justify-content-center mb-5">
+						<div class="col-xl-6 col-lg-8">
+							<h2 class="font-bold text-4xl">Our Roadmap</h2>
+							<p class="text-muted">We’re very proud of the path we’ve taken. Explore the history that made us the company we are today.</p>
+						</div>
+					</div>
+				
+					<div class="">
+						<div class="relative">
+							<div class="h-1 w-full border-t-4 -z-10 border-dotted absolute 2xl:top-[138px] md:top-[115px]" ></div>
+							<div class="timeline-steps aos-init aos-animate grid md:grid-cols-6 gap-1" data-aos="fade-up">
+								<div class="flex justify-center items-center">
+									<div class="timeline-content bg-black/90 p-2 text-white">
+										<!-- <div class="inner-circle"></div> -->
+										 <img class=" w-52" src="https://dummyimage.com/400x400"/>
+										<p class="h6 mt-3 mb-1 text-center">2003</p>
+										<p class="h6 mb-0 mb-lg-0 text-center">Favland Founded</p>
+									</div>
+									<div>
+										<i class="fa-solid fa-chevron-right text-5xl font-semibold text-black"></i>
+									</div>
+								</div>
+								<div class="flex justify-center items-center">
+									<div class="timeline-content bg-black/40 opacity-60 p-2 text-white">
+										<!-- <div class="inner-circle"></div> -->
+										 <img class=" w-52" src="https://dummyimage.com/400x400"/>
+										<p class="h6 mt-3 mb-1 text-center">2003</p>
+										<p class="h6 mb-0 mb-lg-0 text-center">Favland Founded</p>
+									</div>
+									<div>
+										<i class="fa-solid fa-chevron-right text-5xl font-semibold"></i>
+									</div>
+								</div>
+								<div class="flex justify-center items-center">
+									<div class="timeline-content bg-black/40  opacity-60 p-2 text-white">
+										<!-- <div class="inner-circle"></div> -->
+										 <img class=" w-52" src="https://dummyimage.com/400x400"/>
+										<p class="h6 mt-3 mb-1 text-center">2003</p>
+										<p class="h6 mb-0 mb-lg-0 text-center">Favland Founded</p>
+									</div>
+									<div>
+										<i class="fa-solid fa-chevron-right text-5xl font-semibold"></i>
+									</div>
+								</div>
+								<div class="flex justify-center items-center">
+									<div class="timeline-content bg-black/40 opacity-60 p-2 text-white">
+										<!-- <div class="inner-circle"></div> -->
+										 <img class=" w-52" src="https://dummyimage.com/400x400"/>
+										<p class="h6 mt-3 mb-1 text-center">2003</p>
+										<p class="h6 mb-0 mb-lg-0 text-center">Favland Founded</p>
+									</div>
+									<div>
+										<i class="fa-solid fa-chevron-right text-5xl font-semibold"></i>
+									</div>
+								</div>
+								<div class="flex justify-center items-center">
+									<div class="timeline-content bg-black/40 opacity-60 p-2 text-white">
+										<!-- <div class="inner-circle"></div> -->
+										 <img class=" w-52" src="https://dummyimage.com/400x400"/>
+										<p class="h6 mt-3 mb-1 text-center">2003</p>
+										<p class="h6 mb-0 mb-lg-0 text-center">Favland Founded</p>
+									</div>
+									<div>
+										<i class="fa-solid fa-chevron-right text-5xl font-semibold"></i>
+									</div>
+								</div>
+								<div class="flex justify-center items-center">
+									<div class="timeline-content bg-black/40 opacity-60 p-2 text-white">
+										<!-- <div class="inner-circle"></div> -->
+										 <img class=" 2xl:w-[200px] w-[150px]" src="https://dummyimage.com/400x400"/>
+										<p class="h6 mt-3 mb-1 text-center">2003</p>
+										<p class="h6 mb-0 mb-lg-0 text-center">Favland Founded</p>
+									</div>
+									
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- text section start-->
+				<section class="section text-section text-section--front_2 no-padding-bottom"><img class="text-section__bg" src="img/text-section_2.png" alt="img"/>
+					<div class="container">
+						<div class="row">
+							<div class="col-12 text-center">
+								<h2 class="text-section__heading">Sponsor</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-8 offset-lg-4 col-xl-7 offset-xl-4">
+								<h3 class="text-section__title">Delivering help and hope <br/>to children through sponsorship.</h3>
+								<p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail, Canthigaster rostrata. Midshipman dartfish Modoc sucker, yellowtail kingfish</p><a class="button button--primary" href="#">More information</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- text section end-->
+				<!-- events start-->
+				
+				<!-- events end-->
+				<!-- testimonials style-3 start-->
+				<section class="section testimonials testimonials--style-3">
+					<div class="container">
+						<div class="row">
+							<div class="col-xl-4">
+								<div class="row align-items-end">
+									<div class="col-sm-8 col-md-6 col-xl-12">
+										<div class="heading heading--primary"><span class="heading__pre-title">Testimonials</span>
+											<h2 class="heading__title"><span>What People</span><br/><span>Says About Us</span></h2>
+										</div>
+									</div>
+									<div class="col-sm-4 col-md-6 col-xl-12">
+										<!-- slider nav start-->
+										<div class="slider__nav testimonials-style-3__nav">
+											<div class="slider__arrows">
+												<div class="slider__prev"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+												</div>
+												<div class="slider__next"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+												</div>
+											</div>
+										</div>
+										<!-- slider nav end-->
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-8">
+								<div class="testimonials__slider-holder">
+									<div class="testimonials-slider testimonials-slider--style-3">
+										<div class="testimonials-slider__item">
+											<div class="testimonials-slider__icon">“</div>
+											<div class="testimonials-slider__text">
+												<p>Volunteering here has been one of the most fulfilling experiences of my life. Knowing that my efforts contribute to improving lives gives me immense joy and purpose.</p>
+												<div class="testimonials-slider__author"><span class="testimonials-slider__name">Priya Sharma, </span><span class="testimonials-slider__position">Volunteer</span></div>
+											</div>
+										</div>
+										<div class="testimonials-slider__item">
+											<div class="testimonials-slider__icon">“</div>
+											<div class="testimonials-slider__text">
+												<p>Being part of this team has taught me the true value of community service. Together, we've achieved so much, and I’m proud to be making a difference in people’s lives.</p>
+												<div class="testimonials-slider__author"><span class="testimonials-slider__name">Rajesh Verma, </span><span class="testimonials-slider__position">Volunteer</span></div>
+											</div>
+										</div>
+										<div class="testimonials-slider__item">
+											<div class="testimonials-slider__icon">“</div>
+											<div class="testimonials-slider__text">
+												<p>Helping others through this organization has given me a new perspective on life. It feels incredible to see the direct impact of our work on communities in need.</p>
+												<div class="testimonials-slider__author"><span class="testimonials-slider__name">Anjali Menon, </span><span class="testimonials-slider__position">Volunteer</span></div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- testimonials style-3 end-->
+				
+				<!-- blog end-->
+				<!-- donors start-->
+				<section class="section donors no-padding-top">
+					<div class="container">
+						<div class="row margin-bottom">
+							<div class="col-12">
+								<div class="heading heading--primary heading--center"><span class="heading__pre-title">Donors</span>
+									<h2 class="heading__title no-margin-bottom"><span>Who Help</span> <span>Us</span></h2>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<!-- donors slider start-->
+								<div class="slider-holder">
+									<div class="donors-slider donors-slider--style-1">
+										<div class="donors-slider__item">
+											<div class="donors-slider__img"><img src="img/donor_1.png" alt="donor"/></div>
+										</div>
+										<div class="donors-slider__item">
+											<div class="donors-slider__img"><img src="img/donor_2.png" alt="donor"/></div>
+										</div>
+										<div class="donors-slider__item">
+											<div class="donors-slider__img"><img src="img/donor_3.png" alt="donor"/></div>
+										</div>
+										<div class="donors-slider__item">
+											<div class="donors-slider__img"><img src="img/donor_4.png" alt="donor"/></div>
+										</div>
+									</div>
+								</div>
+								<!-- donors slider end-->
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<!-- donors end--><img class="front-2__bottom-img" src="img/volunteer-2.png" alt="img"/>
+			</main>
+			<!-- footer front_2 start-->
+			<footer class="footer footer--front_2">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-lg-4">
+							<div class="footer-logo"><a class="footer-logo__link" href="index.html"><img class="footer-logo__img" src="img/logo/logo-dark.png" alt="logo"/></a></div>
+							<div class="footer-contacts">
+								<p class="footer-contacts__address">kolkata, India</p>
+								<p class="footer-contacts__phone">Phone: <a href="tel:+918777086488">+91 8777086488</a></p>
+								<p class="footer-contacts__mail">Email: <a href="mailto:support@kathakalam.org">support@kathakalam.org</a></p>
+							</div>
+							<!-- footer socials start-->
+							<ul class="footer-socials">
+								<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+								<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i class=" fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+								<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+								<li class="footer-socials__item"><a class="footer-socials__link" href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+							</ul>
+							<!-- footer socials end-->
+						</div>
+						<div class="col-sm-6 col-lg-4 col-xl-3 offset-xl-1">
+							<h6 class="footer__title">Menu</h6>
+							<!-- footer nav start-->
+							<nav>
+								<ul class="footer-menu">
+									<li class="footer-menu__item footer-menu__item--active"><a class="footer-menu__link" href="/#">Home</a></li>
+									
+									<li class="footer-menu__item"><a class="footer-menu__link" href="about.html">About Us</a></li>
+									
+										<li class="footer-menu__item"><a class="footer-menu__link" href="gallery.html">Gallery</a></li>
+									<li class="footer-menu__item"><a class="footer-menu__link" href="contacts.html">Contact Us</a></li>
+								</ul>
+							</nav>
+							<!-- footer nav end-->
+						</div>
+						<div class="col-sm-6 col-lg-3">
+							<h4 class="footer__title">Donate</h4>
+							<p>Help Us Change the Lives of Children in World</p><a class="button footer__button button--filled" href="#">Donate</a>
+						</div>
+					</div>
+					<div class="row align-items-baseline">
+						<div class="col-md-6">
+							<p class="footer-copyright">Copyright ©2025 Katha Kalam. Created with ❤️ by Tenrin. Powered by GlitchBox</p>
+						</div>
+						<div class="col-md-6">
+							<div class="footer-privacy"><a class="footer-privacy__link" href="#">Privacy Policy</a><span class="footer-privacy__divider">|</span><a class="footer-privacy__link" href="#">Term and Condision</a></div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- footer front_2 end-->
+		</div>
+		<!-- libs-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/libs.min.js"></script>
+		<!-- scripts-->
+		<script src="js/common.min.js"></script>
+		
+	</body>
+</html>
