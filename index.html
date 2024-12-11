@@ -9,6 +9,7 @@
 		<link rel="shortcut icon" href="img/favicon.ico"/>
 		<link rel="stylesheet" href="css/styles.min.css"/>
 		<link rel="stylesheet" href="index.css"/>
+		<link rel="stylesheet" href="custom.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script>
@@ -90,7 +91,7 @@
 					</ul>
 				</div>
 				<div class="aside-dropdown__item">
-					<a class="button button--squared" href="#"><span>Donate</span></a>
+					<a class="button button--squared" href="#"><span class=" !after:w-0">Donate</span></a>
 				</div>
 				</div>
 			</div>
@@ -436,28 +437,42 @@
 				
 					<div class="">
 						<div class="relative">
-							<div class="h-1 w-full border-t-4 -z-10 border-dotted absolute 2xl:top-[138px] md:top-[115px]" ></div>
-							<div class="timeline-steps aos-init aos-animate grid md:grid-cols-6 grid-cols-2 gap-1" data-aos="fade-up">
-								<div class="flex justify-center items-center">
-									<div class="timeline-content bg-black/90 p-2 text-white">
+							<div class="hidden md:block h-1 w-full border-t-4 -z-10 border-dotted absolute 2xl:top-[199px] md:top-[115px]" ></div>
+							<div class="timeline-steps aos-init aos-animate grid md:space-y-0 !space-y-16 md:grid-cols-6 grid-cols-2 gap-1" data-aos="fade-up">
+								
+								<div class="flex justify-center items-center -mb-[56px]">
+									<div class="timeline-content bg-black  opacity-90 p-2 text-white">
 										<!-- <div class="inner-circle"></div> -->
 										 <img class=" w-52" src="https://placehold.co/400x400?text=katha\nkalam"/>
 										<p class="h6 mt-3 mb-1 text-center">Next Milestone</p>
 										<p class="h6 mb-0 mb-lg-0 text-center">TBA</p>
 									</div>
-									<div class="hidden md:block">
-										<i class="fa-solid fa-chevron-right text-5xl font-semibold text-black"></i>
+									<div class=" md:block">
+										<i class="fa-solid fa-chevron-right text-5xl font-semibold"></i>
 									</div>
 								</div>
-								<div class="flex justify-center items-center">
+								<div class="flex justify-center items-center relative">
 									<div class="timeline-content bg-black/40 opacity-60 p-2 text-white">
 										<!-- <div class="inner-circle"></div> -->
-										 <img class=" w-52" src="https://placehold.co/400x400?text=katha\nkalam"/>
+										 <img class=" md:w-52 w-40" src="https://placehold.co/400x400?text=katha\nkalam"/>
 										<p class="h6 mt-3 mb-1 text-center">Next Milestone</p>
 										<p class="h6 mb-0 mb-lg-0 text-center">TBA</p>
 									</div>
 									<div class="hidden md:block">
 										<i class="fa-solid fa-chevron-right text-5xl font-semibold"></i>
+									</div>
+									<div class="md:hidden block absolute -left-20 -bottom-16 w-full">
+										<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 36"  height="70">
+											<style>
+												.s0 { fill: none;stroke: #000000;stroke-width: 3 } 
+												.s1 { fill: #000000;stroke: #000000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3 } 
+											</style>
+											<path fill-rule="evenodd" class="s0" d="m7.4 15.5v11.5"/>
+											<path class="s1" d="m11.9 27.8l-4.5 6-4.5-6z"/>
+											<path fill-rule="evenodd" class="s0" d="m71.8 18.5v-15.6"/>
+											<path fill-rule="evenodd" class="s0" d="m44.2 17h27.6"/>
+											<path fill-rule="evenodd" class="s0" d="m7.1 17h37.1"/>
+										</svg>
 									</div>
 								</div>
 								<div class="flex justify-center items-center">
@@ -467,36 +482,49 @@
 										<p class="h6 mt-3 mb-1 text-center">Next Milestone</p>
 										<p class="h6 mb-0 mb-lg-0 text-center">TBA</p>
 									</div>
-									<div class="hidden md:block">
+									<div class=" md:block">
 										<i class="fa-solid fa-chevron-right text-5xl font-semibold"></i>
 									</div>
 								</div>
-								<div class="flex justify-center items-center">
+								<div class="flex justify-center items-center relative">
 									<div class="timeline-content bg-black/40 opacity-60 p-2 text-white">
 										<!-- <div class="inner-circle"></div> -->
-										 <img class=" w-52" src="https://placehold.co/400x400?text=katha\nkalam"/>
+										 <img class=" md:w-52 w-40" src="https://placehold.co/400x400?text=katha\nkalam"/>
 										<p class="h6 mt-3 mb-1 text-center">Next Milestone</p>
 										<p class="h6 mb-0 mb-lg-0 text-center">TBA</p>
 									</div>
 									<div class="hidden md:block">
 										<i class="fa-solid fa-chevron-right text-5xl font-semibold"></i>
 									</div>
+									<div class="md:hidden block absolute -left-20 -bottom-16 w-full">
+										<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 36"  height="70">
+											<style>
+												.s0 { fill: none;stroke: #000000;stroke-width: 3 } 
+												.s1 { fill: #000000;stroke: #000000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3 } 
+											</style>
+											<path fill-rule="evenodd" class="s0" d="m7.4 15.5v11.5"/>
+											<path class="s1" d="m11.9 27.8l-4.5 6-4.5-6z"/>
+											<path fill-rule="evenodd" class="s0" d="m71.8 18.5v-15.6"/>
+											<path fill-rule="evenodd" class="s0" d="m44.2 17h27.6"/>
+											<path fill-rule="evenodd" class="s0" d="m7.1 17h37.1"/>
+										</svg>
+									</div>
 								</div>
 								<div class="flex justify-center items-center">
 									<div class="timeline-content bg-black/40 opacity-60 p-2 text-white">
 										<!-- <div class="inner-circle"></div> -->
-										 <img class=" w-52" src="https://placehold.co/400x400?text=katha\nkalam"/>
+										 <img class=" md:w-52 w-40" src="https://placehold.co/400x400?text=katha\nkalam"/>
 										<p class="h6 mt-3 mb-1 text-center">Next Milestone</p>
 										<p class="h6 mb-0 mb-lg-0 text-center">TBA</p>
 									</div>
-									<div class="hidden md:block">
+									<div class=" md:block">
 										<i class="fa-solid fa-chevron-right text-5xl font-semibold"></i>
 									</div>
 								</div>
 								<div class="flex justify-center items-center">
 									<div class="timeline-content bg-black/40 opacity-60 p-2 text-white">
 										<!-- <div class="inner-circle"></div> -->
-										 <img class=" 2xl:w-[200px] md:w-[150px]" src="https://placehold.co/400x400?text=katha\nkalam"/>
+										 <img class=" 2xl:w-[200px] md:w-[150px] w-40" src="https://placehold.co/400x400?text=katha\nkalam"/>
 										<p class="h6 mt-3 mb-1 text-center">Next Milestone</p>
 										<p class="h6 mb-0 mb-lg-0 text-center">TBA</p>
 									</div>

@@ -1,0 +1,15 @@
+.main-menu__item--has-child .main-menu__link span::after  {
+    content: "";
+    pointer-events: none;
+    display: none !important;
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    right: -15px;
+    top: 7px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+  }
